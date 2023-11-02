@@ -1,5 +1,5 @@
 "use client"
-import { AdressForm, CakeSelector, OrderInformation } from '@/presentation/components'
+import { AddressForm, CakeSelector, OrderInformation } from '@/presentation/components'
 import * as s from './styled'
 import { useFormContext } from 'react-hook-form'
 import { useRouter } from 'next/navigation'
@@ -25,7 +25,7 @@ export default function Home({ cache, toast }:IHome) {
         <p>Please choose your favorite cake from among the following:*</p>
         <CakeSelector />
         {hasSelectCake && <OrderInformation />}
-        {hasSelectCake && <AdressForm />}
+        {hasSelectCake && <AddressForm />}
         {hasSelectCake && <s.Submit type='submit'   value='Order' />}
       </form>
       {toast.toastContainer}

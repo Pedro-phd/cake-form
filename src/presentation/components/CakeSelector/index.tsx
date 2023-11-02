@@ -22,7 +22,7 @@ export const CakeSelector = () => {
 
   return (
     <s.Container>
-      <label onClick={() => setCache("first")}>
+      <label onClick={() => setCache("first")} data-testid="cake-1">
         <input
           {...register("cake")}
           type="radio"
@@ -30,7 +30,7 @@ export const CakeSelector = () => {
         />
         <Image src={FirstCake} alt="cake" width={300} height={200} />
       </label>
-      <label onClick={() => setCache("second")}>
+      <label onClick={() => setCache("second")} data-testid="cake-2">
         <input
           {...register("cake")}
           type="radio"
@@ -38,7 +38,7 @@ export const CakeSelector = () => {
         />
         <Image src={SecondCake} alt="cake" width={300} height={200} />
       </label>
-      <label onClick={() => setCache("third")}>
+      <label onClick={() => setCache("third")} data-testid="cake-3">
         <input
           {...register("cake")}
           type="radio"
@@ -46,7 +46,7 @@ export const CakeSelector = () => {
         />
         <Image src={ThirdCake} alt="cake" width={300} height={200} />
       </label>
-      <label onClick={() => setCache("fourth")}>
+      <label onClick={() => setCache("fourth")} data-testid="cake-4">
         <input
           {...register("cake")}
           type="radio"

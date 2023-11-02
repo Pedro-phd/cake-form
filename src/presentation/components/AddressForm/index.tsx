@@ -4,12 +4,12 @@ import { country } from "./const"
 
 import * as s from './styled'
 
-export const AdressForm = () => {
+export const AddressForm = () => {
 
   const { register, setValue} = useFormContext()
 
   return(
-    <s.Container>
+    <s.Container data-testid="address-form">
       <h2>Adress</h2>
       <CustomInput placeholder="Street Address" {...register("address")}/>
       <CustomInput placeholder="Street Address Line 2" {...register("address-two")}/>

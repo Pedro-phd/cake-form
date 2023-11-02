@@ -32,7 +32,7 @@ export const CustomInput = forwardRef<HTMLInputElement, IInput>(function Input(p
         {endAdornment}
       </s.Container>
       {!errorMessage && <s.Hint>{hint}</s.Hint>}
-      <s.Error>{errorMessage}</s.Error>
+      <s.Error  role="alert">{errorMessage}</s.Error>
     </label>
   )
 })

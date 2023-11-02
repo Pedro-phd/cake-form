@@ -36,7 +36,9 @@ export const OrderInformation = () => {
         />
         <CustomInput
           label="Email"
-          required hint='To receive the complete receipt'
+          required 
+          hint='To receive the complete receipt'
+          placeholder='Email'
           {...register("email")}
           errorMessage={errors?.email?.message?.toString()}
         />

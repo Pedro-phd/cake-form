@@ -6,8 +6,26 @@ export const inputMasks = {
     lazy: true
   },
   hour: {
-    mask: '00:00',
-    lazy: true
+    mask: 'hh:mm',
+    lazy: true,
+    blocks: {
+      // Bloco para as horas
+      'hh': {
+        mask: IMask.MaskedRange,
+        from: 0,
+        to: 24
+      },
+      'mm': {
+        mask: IMask.MaskedRange,
+        from: 0,
+        to: 59,
+        maxLength: 2,
+        validate: function (value: string) {
+          var minutes = parseInt(value, 10);
+          return minutes <= 59;
+        }
+      }
+    }
   },
   date: {
     mask: Date,
