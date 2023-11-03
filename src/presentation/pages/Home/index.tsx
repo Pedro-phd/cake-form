@@ -7,14 +7,14 @@ import { IHome } from './types'
 
 export default function Home({ cache, toast }:IHome) {
 
-  const { watch, reset, handleSubmit, getValues } = useFormContext()
+  const { watch, handleSubmit } = useFormContext()
   const hasSelectCake = watch('cake')
   const router = useRouter()
 
   const onSubmit = (e:any) => {
     cache.set('cake', {select: ''})
     toast.showToast('🍰 Em breve seu delicioso bolo será preparado e entregue no seu endereço.!');
-    setTimeout(() => router.push('/order-confirm'), 1500); // simulando um loader
+    setTimeout(() => router.push('/order-confirm'), 1500); // simulando um tempo de resposta da api
   }
   return (
     <s.Container>

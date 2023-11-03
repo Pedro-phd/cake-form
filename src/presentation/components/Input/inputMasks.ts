@@ -9,7 +9,6 @@ export const inputMasks = {
     mask: 'hh:mm',
     lazy: true,
     blocks: {
-      // Bloco para as horas
       'hh': {
         mask: IMask.MaskedRange,
         from: 0,

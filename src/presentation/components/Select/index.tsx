@@ -6,7 +6,6 @@ import * as s from './styled'
 
 export const CustomSelect = ({
   placeholder,
-  value,
   items,
   onChange,
 }: ISelect) => {
