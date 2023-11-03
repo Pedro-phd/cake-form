@@ -1,36 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# 🍰 Cake Form
 
-First, run the development server:
+Um formulário para pedir seus deliciosos bolos!
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ⚙️ Tecnologias
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
+![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🖥️ Como rodar
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+#### ⚠️ obs.: Na pasta do projeto contem um arquivo .nvmrc, caso faça uso da ferramenta nvm, execute `nvm use` na pasta do projeto para usar a versão correta do nodejs
 
-## Learn More
+1 - Na pasta do projeto execute `npm install && npm run dev`
 
-To learn more about Next.js, take a look at the following resources:
+1.1 - Isso ira subir em uma porta listada no console, uma versão de desenvolvimento
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1.2 - Caso a porta 3000 não esteja em uso, o link padrão séra [localhost:3000](localhost:3000)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+2 - Para rodar os testes, na pasta do projeto execute `npm run test` (caso não tenha instalado as dependências, execute previamente `npm install`)
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+> _O Projeto foi construido em cima da ultima versão LTS disponivel no momento 20.9.0_
