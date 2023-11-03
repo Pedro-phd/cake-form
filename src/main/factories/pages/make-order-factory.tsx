@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from 'react';
 import { makeLocalStorageAdapter } from '../cache/make-cache-factory';
 
-const OrderPage = lazy(() => import("@/presentation/pages/OrderConfirm"));
+const OrderPage = lazy(() => import('@/presentation/pages/OrderConfirm'));
 
 const makeOrder = () => {
   return (

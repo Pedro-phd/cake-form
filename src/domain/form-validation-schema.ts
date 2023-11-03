@@ -1,5 +1,5 @@
-import { isAfter, parse } from "date-fns";
-import { object, string } from "yup";
+import { isAfter, parse } from 'date-fns';
+import { object, string } from 'yup';
 
 export const FormSchema = object().shape({
   firstName: string().required('Required information'),

@@ -28,13 +28,13 @@ describe('Cake Selector', () => {
     expect(firstCake).toBeInTheDocument();
   })
 
-  it("updates the form value when a radio button is clicked", async () => {
+  it('updates the form value when a radio button is clicked', async () => {
     const { getByTestId } = makeSut(<CakeSelector />);
-    const firstRadio = getByTestId("cake-1").querySelector("input");
+    const firstRadio = getByTestId('cake-1').querySelector('input');
     fireEvent.click(firstRadio!);
 
     await act(() => {
-      const updatedValue = getByTestId("cake-1").querySelector("input");
+      const updatedValue = getByTestId('cake-1').querySelector('input');
       expect(updatedValue!.checked).toBe(true);
     });
 

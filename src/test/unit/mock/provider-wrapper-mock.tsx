@@ -1,5 +1,5 @@
-import { ReactNode } from "react";
-import { FormProvider, useForm } from "react-hook-form"
+import { ReactNode } from 'react';
+import { FormProvider, useForm } from 'react-hook-form'
 
 const ProviderMock = (component: ReactNode) => {
   const methods = useForm();

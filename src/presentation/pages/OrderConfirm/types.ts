@@ -1,4 +1,4 @@
-import { GetStorage, SetStorage } from "@/domain/cache";
+import { GetStorage, SetStorage } from '@/domain/cache';
 
 export interface IOrder {
   cache: GetStorage & SetStorage

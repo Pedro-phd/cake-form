@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import { CheckCircle, ShoppingBasket } from 'lucide-react'
 import * as s from './styled'

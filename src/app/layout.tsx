@@ -1,10 +1,10 @@
-"use client"
-import { useForm, FormProvider, useFormContext } from "react-hook-form"
+'use client'
+import { useForm, FormProvider, useFormContext } from 'react-hook-form'
 import { Inter } from 'next/font/google'
 import '@/presentation/styles/globals.css'
-import { yupResolver } from "@hookform/resolvers/yup"
-import { FormSchema } from "@/domain/form-validation-schema"
-import StyledComponentsRegistry from "./styled-rss"
+import { yupResolver } from '@hookform/resolvers/yup'
+import { FormSchema } from '@/domain/form-validation-schema'
+import StyledComponentsRegistry from './styled-rss'
 
 const inter = Inter({ subsets: ['latin'] })
 

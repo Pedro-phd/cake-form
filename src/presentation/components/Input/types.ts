@@ -1,4 +1,4 @@
-import { InputHTMLAttributes, ReactNode } from "react";
+import { InputHTMLAttributes, ReactNode } from 'react';
 
 export interface IInput extends InputHTMLAttributes<HTMLInputElement> {
   endAdornment?: ReactNode
